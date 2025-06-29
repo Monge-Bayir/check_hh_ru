@@ -26,4 +26,5 @@ def save_to_db(df: pd.DataFrame, table_name):
         f"{DB_CONFIG['NAME']}"
     )
     df.to_sql(table_name, engine, if_exists="replace")
-    print(f'Данные сохранены в {table_name}')
+    print(
+        f'Данные сохранены в {table_name}')
